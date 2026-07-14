@@ -78,19 +78,6 @@
   .tag{font-size:12.5px;padding:5px 11px;border-radius:8px;background:var(--card2);
     border:1px solid var(--line);color:var(--muted)}
 
-  /* EXPERIENCE */
-  .exp{position:relative;padding-left:28px;border-left:2px solid var(--line)}
-  .exp-item{position:relative;padding-bottom:40px}
-  .exp-item:last-child{padding-bottom:0}
-  .exp-item::before{content:"";position:absolute;left:-35px;top:5px;width:14px;height:14px;border-radius:50%;
-    background:var(--accent);box-shadow:0 0 0 4px rgba(91,140,255,.2)}
-  .exp-item .role{font-size:19px;font-weight:700}
-  .exp-item .co{color:var(--accent);font-weight:600}
-  .exp-item .meta{font-size:13px;color:var(--muted);margin:4px 0 14px}
-  .exp-item ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-  .exp-item li{color:var(--muted);font-size:15px;padding-left:20px;position:relative}
-  .exp-item li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
-
   /* PROJECTS */
   .proj-intro{color:var(--muted);max-width:680px;margin-bottom:36px;font-size:16px}
   .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
@@ -134,11 +121,9 @@
 
 <nav>
   <div class="wrap">
-    <div class="logo">Sai<span>Sri</span></div>
+    <div class="logo">Sai Sri</div>
     <div class="navlinks">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
+      <a href="#about">Focus</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
@@ -150,13 +135,11 @@
   <div class="wrap">
     <div class="badge"><span class="dot"></span> Open to Software Engineer roles · Willing to relocate</div>
     <h1>Software Engineer building<br><span class="grad">scalable systems & AI</span></h1>
-    <p class="lead">3+ years designing cloud-native distributed systems — Java microservices, Kafka event pipelines, and reactive full-stack apps serving millions of users. Now building production AI infrastructure on top of that foundation.</p>
+    <p class="lead">Experienced in designing cloud-native distributed systems — Java microservices, Kafka event pipelines, and reactive full-stack apps serving millions of users. Now building production AI infrastructure on top of that foundation.</p>
     <div class="cta">
       <a class="btn btn-primary" href="#projects">View Projects</a>
-      <a class="btn btn-ghost" href="mailto:saisrithalluri@gmail.com">Get in touch</a>
     </div>
     <div class="stats">
-      <div class="stat"><div class="n">3+ yrs</div><div class="l">Engineering experience</div></div>
       <div class="stat"><div class="n">15+</div><div class="l">Microservices architected</div></div>
       <div class="stat"><div class="n">10M+</div><div class="l">Kafka messages / day</div></div>
       <div class="stat"><div class="n">95%+</div><div class="l">Automated test coverage</div></div>
@@ -164,124 +147,25 @@
   </div>
 </header>
 
-<!-- ABOUT -->
+<!-- FOCUS -->
 <section id="about">
   <div class="wrap">
-    <h2 class="section-title">About</h2>
-    <h3 class="section-head">Backend depth, moving into AI</h3>
-    <div class="about-grid">
-      <div class="about">
-        <p>I'm a software engineer focused on <strong>cloud-native distributed systems</strong> — the kind of backend work where correctness, throughput, and reliability actually matter. At Optum I architected 15+ Spring Boot microservices for enterprise healthcare, built Kafka pipelines processing 10M+ messages a day, and cut a key page's load time from 5 seconds to 1.</p>
-        <p>I've shipped across the stack: reactive backends with Spring WebFlux, GraphQL APIs, React and React Native frontends, and full CI/CD on AWS EKS and ECS Fargate. Real-time payments with Apple Pay, Google Pay, and Stripe. Testing discipline at 95%+ coverage.</p>
-        <p>Now I'm channeling that systems foundation into <strong>production AI</strong> — RAG serving, LLM orchestration, and ML infrastructure — the projects below are how I'm doing it in public.</p>
-      </div>
-      <div class="focus-card">
-        <h4>Currently focused on</h4>
-        <div class="focus-row"><div class="ic">⚙️</div> Distributed systems & event-driven architecture</div>
-        <div class="focus-row"><div class="ic">🔎</div> RAG & LLM serving infrastructure</div>
-        <div class="focus-row"><div class="ic">🤖</div> Agent orchestration & guardrails</div>
-        <div class="focus-row"><div class="ic">📊</div> ML pipelines & MLOps</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" style="background:var(--bg2)">
-  <div class="wrap">
-    <h2 class="section-title">Toolbox</h2>
-    <h3 class="section-head">Technical skills</h3>
-    <div class="skill-groups">
-      <div class="skill-group">
-        <h4>💻 Languages</h4>
-        <div class="tags">
-          <span class="tag">Java</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span>
-          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Scala</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>🔧 Backend</h4>
-        <div class="tags">
-          <span class="tag">Spring Boot</span><span class="tag">Spring WebFlux</span><span class="tag">Spring Security</span>
-          <span class="tag">REST APIs</span><span class="tag">GraphQL / Apollo</span><span class="tag">Microservices</span>
-          <span class="tag">Kafka</span><span class="tag">Node.js</span><span class="tag">Reactive Programming</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>🎨 Frontend</h4>
-        <div class="tags">
-          <span class="tag">ReactJS</span><span class="tag">React Native</span><span class="tag">React Hooks</span>
-          <span class="tag">TypeScript</span><span class="tag">Storybook</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>☁️ Cloud / DevOps</h4>
-        <div class="tags">
-          <span class="tag">AWS EKS</span><span class="tag">ECS Fargate</span><span class="tag">CloudWatch</span>
-          <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span>
-          <span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">JFrog</span><span class="tag">Linux</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>🗄️ Data / DB</h4>
-        <div class="tags">
-          <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">MariaDB</span>
-          <span class="tag">Redis</span><span class="tag">Prisma</span><span class="tag">PySpark</span><span class="tag">Airflow</span><span class="tag">Apache NiFi</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4>🧪 Testing / Observability</h4>
-        <div class="tags">
-          <span class="tag">JUnit</span><span class="tag">Mockito</span><span class="tag">Jest</span><span class="tag">Playwright</span>
-          <span class="tag">Cucumber</span><span class="tag">JMeter</span><span class="tag">Datadog</span><span class="tag">Splunk</span>
-          <span class="tag">Grafana</span><span class="tag">SonarQube</span><span class="tag">Vault</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="wrap">
-    <h2 class="section-title">Track record</h2>
-    <h3 class="section-head">Experience</h3>
-    <div class="exp">
-      <div class="exp-item">
-        <div class="role">Software Engineer · <span class="co">Optum</span></div>
-        <div class="meta">Jun 2024 – Present · USA (Remote)</div>
-        <ul>
-          <li>Architected and maintained 15+ Spring Boot microservices for enterprise healthcare, improving API latency 25% while strengthening scalability and resiliency.</li>
-          <li>Built Kafka-driven services processing 10M+ messages daily with cleanup and throttling to stabilize downstream performance.</li>
-          <li>Integrated Apple Pay, Google Pay, and Stripe via async webhooks and queue-based workflows — real-time transaction handling replacing batch processing.</li>
-          <li>Cut Health & Wellness page load from 5s to 1s via API consolidation, backend refactoring, and Redis caching.</li>
-          <li>Deployed containerized services on AWS EKS / ECS Fargate with Docker, Kubernetes, GitHub Actions, and full observability (CloudWatch, Datadog, Splunk, Grafana).</li>
-          <li>Maintained 95%+ automated test coverage while driving code reviews and ATDD practices.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <div class="role">Associate Member Technical Staff · <span class="co">Model N</span></div>
-        <div class="meta">Jan 2022 – Dec 2022 · Hyderabad, India</div>
-        <ul>
-          <li>Built a next-gen cloud-native SaaS platform with Java, Spring Boot, ReactJS, Apollo GraphQL, Node.js, Docker, Kafka, Prisma, and MariaDB.</li>
-          <li>Designed scalable OO microservices and GraphQL services using clean architecture and reusable design patterns.</li>
-          <li>Built reusable React components and backend patterns that accelerated feature delivery across platform modules.</li>
-          <li>Implemented Kafka integrations and Apache NiFi / Camunda workflows for distributed processing and orchestration.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <div class="role">M.S. in Information Technology · <span class="co">University of Cincinnati</span></div>
-        <div class="meta">Jan 2023 – Apr 2024 · Cincinnati, OH</div>
-      </div>
+    <h2 class="section-title">Focus</h2>
+    <h3 class="section-head">Currently focused on</h3>
+    <div class="focus-card">
+      <div class="focus-row"><div class="ic">⚙️</div> Distributed systems & event-driven architecture</div>
+      <div class="focus-row"><div class="ic">🔎</div> RAG & LLM serving infrastructure</div>
+      <div class="focus-row"><div class="ic">🤖</div> Agent orchestration & guardrails</div>
+      <div class="focus-row"><div class="ic">📊</div> ML pipelines & MLOps</div>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" style="background:var(--bg2)">
+<section id="projects">
   <div class="wrap">
     <h2 class="section-title">Portfolio</h2>
-    <h3 class="section-head">Featured projects</h3>
+    <h3 class="section-head">Featured Projects</h3>
     <p class="proj-intro">Six projects that build on each other into a coherent platform — moving from distributed backend into production AI infrastructure. Each ships with a README, architecture diagram, and quantified results. <em>(Add your GitHub &amp; demo links as you build.)</em></p>
     <div class="proj-grid">
 
@@ -340,26 +224,24 @@
       </div>
 
     </div>
-    <div class="note">💡 <b>Tip:</b> As you finish each project, replace the disabled GitHub/Demo links with real URLs, and add a quantified result to each card (e.g. "p95 &lt;800ms", "cut query cost 40%"). See <b>Project_Roadmap.md</b> for full architecture and build guidance.</div>
+    <div class="note">💡 <b>Tip:</b> As you finish each project, replace the disabled GitHub/Demo links with real repo URLs, and add a quantified result to each card (e.g. "p95 &lt;800ms", "cut query cost 40%").</div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="wrap">
-    <h2 class="section-title" style="text-align:center">Get in touch</h2>
+    <h2 class="section-title" style="text-align:center">Contact</h2>
     <h3>Let's build something</h3>
     <p>Open to Software Engineer roles across backend, full-stack, AI/ML, and AI infrastructure. Willing to relocate.</p>
     <div class="contact-links">
       <a class="btn btn-primary" href="mailto:saisrithalluri@gmail.com">✉️ saisrithalluri@gmail.com</a>
-      <a class="btn btn-ghost" href="tel:5135502576">📞 513-550-2576</a>
-      <a class="btn btn-ghost" href="#" onclick="return false">in LinkedIn</a>
-      <a class="btn btn-ghost" href="#" onclick="return false">⌥ GitHub</a>
+      <a class="btn btn-ghost" href="https://github.com/saisri2112" target="_blank" rel="noopener">⌥ GitHub</a>
     </div>
   </div>
 </section>
 
-<footer>© 2026 Sai Sri · Built as a living portfolio · Add your LinkedIn &amp; GitHub links above</footer>
+<footer>© 2026 Sai Sri · <a href="https://github.com/saisri2112" target="_blank" rel="noopener" style="color:var(--accent)">github.com/saisri2112</a></footer>
 
 </body>
 </html>
